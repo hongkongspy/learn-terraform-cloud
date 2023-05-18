@@ -7,7 +7,7 @@ data "aws_ami" "ubuntu" {
 
   filter {
     name   = "name"
-    values = ["ami-014d05e6b24240371"]
+    values = ["al2023-ami-2023.0.20230503.0-kernel-6.1-x86_64"]
   }
 
   filter {
@@ -15,7 +15,7 @@ data "aws_ami" "ubuntu" {
     values = ["hvm"]
   }
 
-  owners = ["099720109477"] # Canonical
+  owners = ["137112412989"] # Canonical
 }
 
 resource "aws_instance" "ubuntu" {
